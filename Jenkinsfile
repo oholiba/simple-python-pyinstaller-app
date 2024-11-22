@@ -31,5 +31,9 @@ pipeline {
             }
         }
     }
+    parameters {
+        choice(name: 'repo', choices: 'choice1\nchoice2',
+               description: 'Test code source')
+    }
 }
 
